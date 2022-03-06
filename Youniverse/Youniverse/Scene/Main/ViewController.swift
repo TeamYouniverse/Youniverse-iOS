@@ -9,9 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var logoView: TopLogoView? = TopLogoView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 
