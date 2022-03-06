@@ -66,6 +66,12 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="" image="list"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNg-vR-W2p">
+                                <rect key="frame" x="186" y="281.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -87,11 +93,13 @@
                             <constraint firstItem="j2R-wG-Tqg" firstAttribute="top" secondItem="Rbn-fC-WCa" secondAttribute="bottom" constant="62" id="bRZ-YR-BWL"/>
                             <constraint firstItem="Og6-hZ-oLh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cHH-qh-QNd"/>
                             <constraint firstItem="4w7-Mp-OOP" firstAttribute="width" secondItem="NLf-dE-IGt" secondAttribute="width" multiplier="44/360" id="f7M-to-VJd"/>
+                            <constraint firstItem="nNg-vR-W2p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fEx-lq-nVp"/>
                             <constraint firstItem="Rbn-fC-WCa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fef-np-pCX"/>
                             <constraint firstItem="Rbn-fC-WCa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30" id="iPC-hh-cFi"/>
                             <constraint firstItem="Rbn-fC-WCa" firstAttribute="width" secondItem="NLf-dE-IGt" secondAttribute="width" multiplier="255/360" id="iUQ-UM-c2R"/>
                             <constraint firstItem="Og6-hZ-oLh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ilj-ic-fjE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yN9-FJ-5YS" secondAttribute="trailing" constant="17" id="kRw-bZ-3Cb"/>
+                            <constraint firstItem="Rbn-fC-WCa" firstAttribute="top" secondItem="nNg-vR-W2p" secondAttribute="bottom" constant="29" id="kUe-Du-dHh"/>
                             <constraint firstItem="yN9-FJ-5YS" firstAttribute="width" secondItem="yN9-FJ-5YS" secondAttribute="height" multiplier="1:1" id="nR0-Gt-cPA"/>
                             <constraint firstItem="j2R-wG-Tqg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="sq2-Ce-b2J"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VuN-bA-52D" secondAttribute="trailing" constant="18" id="waz-3i-NPD"/>
@@ -101,6 +109,7 @@
                     </view>
                     <connections>
                         <outlet property="logoView" destination="Og6-hZ-oLh" id="9sh-jk-xSB"/>
+                        <outlet property="planetNameLabel" destination="nNg-vR-W2p" id="fq1-rj-qYv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

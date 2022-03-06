@@ -20,6 +20,8 @@
 		868E04A327D49A05001FAC7C /* YouniverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E04A227D49A05001FAC7C /* YouniverseUITestsLaunchTests.swift */; };
 		868E04B627D49EA7001FAC7C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E04B527D49EA7001FAC7C /* UIColor+Extension.swift */; };
 		868E04B927D4A11F001FAC7C /* TopLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E04B827D4A11F001FAC7C /* TopLogoView.swift */; };
+		868E04BC27D4AB40001FAC7C /* JejuMyeongjoOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868E04BB27D4AB40001FAC7C /* JejuMyeongjoOTF.otf */; };
+		868E04BE27D4ABA9001FAC7C /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E04BD27D4ABA9001FAC7C /* UIFont+Extension.swift */; };
 		F4AEB8BC352B8D14F13B51EB /* Pods_YouniverseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F52EF89BF1AD7CDBECB2B91 /* Pods_YouniverseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		868E04A227D49A05001FAC7C /* YouniverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouniverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		868E04B527D49EA7001FAC7C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		868E04B827D4A11F001FAC7C /* TopLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLogoView.swift; sourceTree = "<group>"; };
+		868E04BB27D4AB40001FAC7C /* JejuMyeongjoOTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JejuMyeongjoOTF.otf; sourceTree = "<group>"; };
+		868E04BD27D4ABA9001FAC7C /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		88CCD88406B3A8E199B32980 /* Pods_Youniverse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Youniverse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DA6EA8FAECD1BAD0318634 /* Pods-Youniverse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youniverse.debug.xcconfig"; path = "Target Support Files/Pods-Youniverse/Pods-Youniverse.debug.xcconfig"; sourceTree = "<group>"; };
 		9F52EF89BF1AD7CDBECB2B91 /* Pods_YouniverseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouniverseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +109,6 @@
 				2DF33D5CC8E98EB5BC705F81 /* Pods-YouniverseTests.debug.xcconfig */,
 				E2F7B821D4D06F61A5B9FB7D /* Pods-YouniverseTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -179,6 +182,7 @@
 		868E04B127D49AC2001FAC7C /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				868E04BA27D4AB20001FAC7C /* Font */,
 				868E047F27D49A03001FAC7C /* AppDelegate.swift */,
 				868E048127D49A03001FAC7C /* SceneDelegate.swift */,
 				868E048A27D49A05001FAC7C /* LaunchScreen.storyboard */,
@@ -208,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				868E04B527D49EA7001FAC7C /* UIColor+Extension.swift */,
+				868E04BD27D4ABA9001FAC7C /* UIFont+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -218,6 +223,14 @@
 				868E04B827D4A11F001FAC7C /* TopLogoView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		868E04BA27D4AB20001FAC7C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				868E04BB27D4AB40001FAC7C /* JejuMyeongjoOTF.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		AE6514D88EA9F045451D4BA7 /* Frameworks */ = {
@@ -340,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				868E048C27D49A05001FAC7C /* LaunchScreen.storyboard in Resources */,
+				868E04BC27D4AB40001FAC7C /* JejuMyeongjoOTF.otf in Resources */,
 				868E048927D49A05001FAC7C /* Assets.xcassets in Resources */,
 				868E048727D49A03001FAC7C /* Main.storyboard in Resources */,
 			);
@@ -469,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868E04BE27D4ABA9001FAC7C /* UIFont+Extension.swift in Sources */,
 				868E048427D49A03001FAC7C /* ViewController.swift in Sources */,
 				868E048027D49A03001FAC7C /* AppDelegate.swift in Sources */,
 				868E048227D49A03001FAC7C /* SceneDelegate.swift in Sources */,
