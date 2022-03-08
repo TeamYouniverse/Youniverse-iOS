@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vCI-uE-k7f">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="zr4-nj-vKA">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L80-D7-gJU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="vCI-uE-k7f" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MXK-0i-Y68">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RTT-FH-ngA"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-823" y="84"/>
+        </scene>
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Youniverse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Youniverse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,15 +35,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-background 1" translatesAutoresizingMaskIntoConstraints="NO" id="NLf-dE-IGt">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Og6-hZ-oLh" customClass="TopLogoView" customModule="Youniverse" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="55"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="6MF-OQ-jok"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbn-fC-WCa">
-                                <rect key="frame" x="60.5" y="331.5" width="293" height="293"/>
+                                <rect key="frame" x="60.5" y="301.5" width="293" height="293"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Rbn-fC-WCa" secondAttribute="height" multiplier="1:1" id="clc-jI-Z8e"/>
                                 </constraints>
@@ -35,7 +44,7 @@
                                 <state key="normal" image="planet_main"/>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbC-qw-CAl">
-                                <rect key="frame" x="34" y="197.5" width="43.5" height="44"/>
+                                <rect key="frame" x="34" y="167.5" width="43.5" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="UbC-qw-CAl" secondAttribute="height" multiplier="1:1" id="u9I-xg-6pv"/>
                                 </constraints>
@@ -43,17 +52,17 @@
                                 <state key="normal" title="" image="planet_sorry"/>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yN9-FJ-5YS">
-                                <rect key="frame" x="338.5" y="262.5" width="58.5" height="59"/>
+                                <rect key="frame" x="338.5" y="232.5" width="58.5" height="59"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="" image="planet_happy"/>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4w7-Mp-OOP">
-                                <rect key="frame" x="349.5" y="648.5" width="50.5" height="50.5"/>
+                                <rect key="frame" x="349.5" y="618.5" width="50.5" height="50.5"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="" image="planet_sad"/>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2R-wG-Tqg">
-                                <rect key="frame" x="34" y="686.5" width="80.5" height="80.5"/>
+                                <rect key="frame" x="34" y="656.5" width="80.5" height="80.5"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="" image="planet_touched"/>
                             </button>
@@ -67,7 +76,7 @@
                                 <state key="normal" title="" image="list"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNg-vR-W2p">
-                                <rect key="frame" x="186" y="281.5" width="42" height="21"/>
+                                <rect key="frame" x="186" y="251.5" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -86,18 +95,15 @@
                             <constraint firstItem="UbC-qw-CAl" firstAttribute="width" secondItem="NLf-dE-IGt" secondAttribute="width" multiplier="38/360" id="KP1-PW-CYW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4w7-Mp-OOP" secondAttribute="trailing" constant="14" id="LSs-d5-Nbe"/>
                             <constraint firstItem="Rbn-fC-WCa" firstAttribute="top" secondItem="yN9-FJ-5YS" secondAttribute="bottom" constant="10" id="MdW-bS-B1S"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Og6-hZ-oLh" secondAttribute="trailing" id="N5e-gY-d63"/>
                             <constraint firstItem="4w7-Mp-OOP" firstAttribute="top" secondItem="Rbn-fC-WCa" secondAttribute="bottom" constant="24" id="Urr-bA-bCE"/>
                             <constraint firstItem="j2R-wG-Tqg" firstAttribute="width" secondItem="NLf-dE-IGt" secondAttribute="width" multiplier="70/360" id="VO1-sw-05C"/>
                             <constraint firstItem="Rbn-fC-WCa" firstAttribute="top" secondItem="UbC-qw-CAl" secondAttribute="bottom" constant="90" id="X5K-bT-qFW"/>
                             <constraint firstItem="j2R-wG-Tqg" firstAttribute="top" secondItem="Rbn-fC-WCa" secondAttribute="bottom" constant="62" id="bRZ-YR-BWL"/>
-                            <constraint firstItem="Og6-hZ-oLh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cHH-qh-QNd"/>
                             <constraint firstItem="4w7-Mp-OOP" firstAttribute="width" secondItem="NLf-dE-IGt" secondAttribute="width" multiplier="44/360" id="f7M-to-VJd"/>
                             <constraint firstItem="nNg-vR-W2p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fEx-lq-nVp"/>
                             <constraint firstItem="Rbn-fC-WCa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fef-np-pCX"/>
-                            <constraint firstItem="Rbn-fC-WCa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30" id="iPC-hh-cFi"/>
+                            <constraint firstItem="Rbn-fC-WCa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iPC-hh-cFi"/>
                             <constraint firstItem="Rbn-fC-WCa" firstAttribute="width" secondItem="NLf-dE-IGt" secondAttribute="width" multiplier="255/360" id="iUQ-UM-c2R"/>
-                            <constraint firstItem="Og6-hZ-oLh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ilj-ic-fjE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yN9-FJ-5YS" secondAttribute="trailing" constant="17" id="kRw-bZ-3Cb"/>
                             <constraint firstItem="Rbn-fC-WCa" firstAttribute="top" secondItem="nNg-vR-W2p" secondAttribute="bottom" constant="29" id="kUe-Du-dHh"/>
                             <constraint firstItem="yN9-FJ-5YS" firstAttribute="width" secondItem="yN9-FJ-5YS" secondAttribute="height" multiplier="1:1" id="nR0-Gt-cPA"/>
@@ -107,8 +113,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VuN-bA-52D" secondAttribute="bottom" constant="15" id="zmK-DW-0Ll"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="W4s-Ob-pZl"/>
                     <connections>
-                        <outlet property="logoView" destination="Og6-hZ-oLh" id="9sh-jk-xSB"/>
                         <outlet property="planetNameLabel" destination="nNg-vR-W2p" id="fq1-rj-qYv"/>
                     </connections>
                 </viewController>

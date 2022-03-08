@@ -14,14 +14,18 @@ class TopLogoView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        setStyle()
-        setView()
-        setLayout()
+        initView()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
+        initView()
+    }
+}
+
+extension TopLogoView {
+    private func initView() {
         setStyle()
         setView()
         setLayout()
@@ -29,25 +33,26 @@ class TopLogoView: UIView {
 }
 
 extension TopLogoView {
-    func createLogoImageView() -> UIImageView {
+    private func createLogoImageView() -> UIImageView {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "logo")
         imageView.contentMode = .scaleAspectFit
         return imageView
     }
     
-    func setStyle() {
+    private func setStyle() {
         self.backgroundColor = .clear
     }
     
-    func setView() {
+    private func setView() {
         self.addSubview(logoImageView)
     }
     
-    func setLayout() {
+    private func setLayout() {
         logoImageView.snp.makeConstraints { make in
-            make.height.equalTo(55)
-            make.center.equalToSuperview()
+//            make.height.equalTo(55)
+            make.top.bottom.equalToSuperview()
+            make.centerX.equalToSuperview()
         }
     }
 }

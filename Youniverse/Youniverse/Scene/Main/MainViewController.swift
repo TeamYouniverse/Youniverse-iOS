@@ -7,25 +7,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     //MARK: - IBOutlet
-    @IBOutlet var logoView: TopLogoView? = TopLogoView()
-    
     @IBOutlet var planetNameLabel: UILabel!
     
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setNavigationController()
         setStyle()
     }
 
 
 }
 
-extension ViewController {
-    func setStyle() {
+extension MainViewController {
+    private func setNavigationController() {
+        navigationItem.titleView = TopLogoView()
+    }
+    
+    private func setStyle() {
         planetNameLabel.textAlignment = .center
         planetNameLabel.font = .JejuMyeongjo(size: 16)
         planetNameLabel.text = "고양이냥"
