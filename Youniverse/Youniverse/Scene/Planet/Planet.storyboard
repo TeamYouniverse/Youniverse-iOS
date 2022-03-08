@@ -19,16 +19,30 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-background 1" translatesAutoresizingMaskIntoConstraints="NO" id="ADA-Qx-Yfh">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfw-Qw-FIH">
+                                <rect key="frame" x="92" y="333" width="230" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Sfw-Qw-FIH" secondAttribute="height" multiplier="1:1" id="zvD-tq-SKK"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="planet_main"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ADA-Qx-Yfh" secondAttribute="bottom" id="LZr-u1-agn"/>
                             <constraint firstItem="ADA-Qx-Yfh" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="OYH-4V-oIo"/>
+                            <constraint firstItem="Sfw-Qw-FIH" firstAttribute="width" secondItem="ADA-Qx-Yfh" secondAttribute="width" multiplier="200/360" id="f6J-yK-2jN"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ADA-Qx-Yfh" secondAttribute="trailing" id="h2a-fb-X7G"/>
+                            <constraint firstItem="Sfw-Qw-FIH" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="m8S-6j-Qzv"/>
                             <constraint firstItem="ADA-Qx-Yfh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="p7c-Il-2xq"/>
+                            <constraint firstItem="Sfw-Qw-FIH" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="z2u-YK-VdK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="planetImageView" destination="Sfw-Qw-FIH" id="sCY-9f-KGs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,6 +51,7 @@
     </scenes>
     <resources>
         <image name="common-background 1" width="360" height="640"/>
+        <image name="planet_main" width="293" height="293"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

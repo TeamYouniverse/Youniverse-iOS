@@ -12,6 +12,10 @@ class PlanetViewController: UIViewController {
     //MARK: - Properties
     var targetPlanet: Planet?
     
+    //MARK: - IBOutlets
+    @IBOutlet var planetImageView: UIButton!
+    
+    //MARK: - Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +24,7 @@ class PlanetViewController: UIViewController {
 
 }
 
+//MARK: - Design
 extension PlanetViewController {
     private func setNavigationController() {
         navigationItem.titleView = TopLogoView()
