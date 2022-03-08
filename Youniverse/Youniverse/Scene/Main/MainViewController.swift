@@ -19,10 +19,26 @@ class MainViewController: UIViewController {
         setNavigationController()
         setStyle()
     }
-
-
+    
+    //MARK: - IBActions
+    @IBAction func happyPlanetDidTap(_ sender: Any) {
+        handlePlanetDidTap(planet: .happy)
+    }
+    
+    @IBAction func sadPlanetDidTap(_ sender: Any) {
+        handlePlanetDidTap(planet: .sad)
+    }
+    
+    @IBAction func touchingPlanetDidTap(_ sender: Any) {
+        handlePlanetDidTap(planet: .touching)
+    }
+    
+    @IBAction func sorryPlanetDidTap(_ sender: Any) {
+        handlePlanetDidTap(planet: .sorry)
+    }
 }
 
+//MARK: - Design
 extension MainViewController {
     private func setNavigationController() {
         navigationItem.titleView = TopLogoView()
@@ -36,3 +52,15 @@ extension MainViewController {
     }
 }
 
+//MARK: - Action
+extension MainViewController {
+    private func handlePlanetDidTap(planet: Planet) {
+        let nextStoryboard = UIStoryboard(name: "Planet", bundle: nil)
+        
+        guard let dvc = nextStoryboard.instantiateViewController(identifier: "PlanetViewController") as? PlanetViewController else {
+            return
+        }
+        
+        navigationController?.pushViewController(dvc, animated: true)
+    }
+}

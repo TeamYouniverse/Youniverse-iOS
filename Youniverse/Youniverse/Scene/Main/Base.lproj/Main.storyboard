@@ -50,21 +50,33 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="" image="planet_sorry"/>
+                                <connections>
+                                    <action selector="sorryPlanetDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ud8-A3-kMf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yN9-FJ-5YS">
                                 <rect key="frame" x="338.5" y="232.5" width="58.5" height="59"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="" image="planet_happy"/>
+                                <connections>
+                                    <action selector="happyPlanetDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lZ-a5-cCc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4w7-Mp-OOP">
                                 <rect key="frame" x="349.5" y="618.5" width="50.5" height="50.5"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="" image="planet_sad"/>
+                                <connections>
+                                    <action selector="sadPlanetDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4m-CX-Cus"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2R-wG-Tqg">
                                 <rect key="frame" x="34" y="656.5" width="80.5" height="80.5"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="" image="planet_touched"/>
+                                <connections>
+                                    <action selector="touchingPlanetDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uot-KT-D0t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuN-bA-52D">
                                 <rect key="frame" x="347" y="798" width="49" height="49"/>

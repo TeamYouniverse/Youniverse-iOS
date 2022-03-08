@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		00CE0480714BD1F6783C2039 /* Pods_Youniverse_YouniverseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD95E8BA9F139A2EA482EA5 /* Pods_Youniverse_YouniverseUITests.framework */; };
 		6971D6D26FF93AF65701D917 /* Pods_Youniverse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CCD88406B3A8E199B32980 /* Pods_Youniverse.framework */; };
+		8623D6BB27D7747E00170D36 /* Planet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8623D6BA27D7747E00170D36 /* Planet.storyboard */; };
+		8623D6BD27D7749900170D36 /* PlanetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8623D6BC27D7749900170D36 /* PlanetViewController.swift */; };
+		8623D6C027D7755400170D36 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8623D6BF27D7755400170D36 /* Planet.swift */; };
 		868E048027D49A03001FAC7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E047F27D49A03001FAC7C /* AppDelegate.swift */; };
 		868E048227D49A03001FAC7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E048127D49A03001FAC7C /* SceneDelegate.swift */; };
 		868E048427D49A03001FAC7C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E048327D49A03001FAC7C /* MainViewController.swift */; };
@@ -45,6 +48,9 @@
 /* Begin PBXFileReference section */
 		245B2AE1F20BA1FF79B6CB1C /* Pods-Youniverse-YouniverseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youniverse-YouniverseUITests.debug.xcconfig"; path = "Target Support Files/Pods-Youniverse-YouniverseUITests/Pods-Youniverse-YouniverseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2DF33D5CC8E98EB5BC705F81 /* Pods-YouniverseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouniverseTests.debug.xcconfig"; path = "Target Support Files/Pods-YouniverseTests/Pods-YouniverseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8623D6BA27D7747E00170D36 /* Planet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Planet.storyboard; sourceTree = "<group>"; };
+		8623D6BC27D7749900170D36 /* PlanetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewController.swift; sourceTree = "<group>"; };
+		8623D6BF27D7755400170D36 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		868E047C27D49A03001FAC7C /* Youniverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youniverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868E047F27D49A03001FAC7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		868E048127D49A03001FAC7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +118,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8623D6B927D7746400170D36 /* Planet */ = {
+			isa = PBXGroup;
+			children = (
+				8623D6BA27D7747E00170D36 /* Planet.storyboard */,
+				8623D6BC27D7749900170D36 /* PlanetViewController.swift */,
+			);
+			path = Planet;
+			sourceTree = "<group>";
+		};
+		8623D6BE27D7754800170D36 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				8623D6BF27D7755400170D36 /* Planet.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		868E047327D49A03001FAC7C = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +187,7 @@
 		868E04AF27D49AB0001FAC7C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8623D6BE27D7754800170D36 /* Enum */,
 				868E04B727D4A108001FAC7C /* View */,
 				868E04B427D49E91001FAC7C /* Extension */,
 			);
@@ -175,6 +199,7 @@
 			children = (
 				868E04B227D49BCC001FAC7C /* OnBoarding */,
 				868E04B327D49BD3001FAC7C /* Main */,
+				8623D6B927D7746400170D36 /* Planet */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -353,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				868E048C27D49A05001FAC7C /* LaunchScreen.storyboard in Resources */,
+				8623D6BB27D7747E00170D36 /* Planet.storyboard in Resources */,
 				868E04BC27D4AB40001FAC7C /* JejuMyeongjoOTF.otf in Resources */,
 				868E048927D49A05001FAC7C /* Assets.xcassets in Resources */,
 				868E048727D49A03001FAC7C /* Main.storyboard in Resources */,
@@ -485,6 +511,8 @@
 			files = (
 				868E04BE27D4ABA9001FAC7C /* UIFont+Extension.swift in Sources */,
 				868E048427D49A03001FAC7C /* MainViewController.swift in Sources */,
+				8623D6BD27D7749900170D36 /* PlanetViewController.swift in Sources */,
+				8623D6C027D7755400170D36 /* Planet.swift in Sources */,
 				868E048027D49A03001FAC7C /* AppDelegate.swift in Sources */,
 				868E048227D49A03001FAC7C /* SceneDelegate.swift in Sources */,
 				868E04B627D49EA7001FAC7C /* UIColor+Extension.swift in Sources */,
